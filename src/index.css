@@ -1,0 +1,17 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  position: relative;
+  min-height: 312rem;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 12px;
+}

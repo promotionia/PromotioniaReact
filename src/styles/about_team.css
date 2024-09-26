@@ -1,0 +1,19 @@
+
+
+@media  screen and (max-width:1000px) {
+    .mission{
+        flex-direction: column;
+        /* align-items: center;
+        overflow: auto; */
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        margin: auto;
+    } 
+    
+    
+    
+}

@@ -1,0 +1,131 @@
+
+footer{
+    background-color: rgb(75, 73, 73);
+    position:absolute;
+    display: flex;
+    height:18vh;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    bottom: 0px;
+    left:0px;
+}
+
+#socialMedia{
+    position: relative;
+    display: flex;
+     transform-style: preserve-3d;
+     transform: skew(21deg) 
+}
+
+#socialMedia li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 25px;
+}
+
+#socialMedia li::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform-origin: top;
+    transform: skewX(-41deg)
+}
+
+#socialMedia li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 10px;
+    height: 100%;
+    background: #2a2a2a;
+    transform-origin: right;
+    transform: skewY(-49deg);
+}
+
+#socialMedia li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: rgba(255,255,255,0.2);
+    font-size: 30px !important;
+    transition: 0.2s;
+}
+
+#socialMedia li:hover span{
+    z-index: 1000;
+    transition: 0.5s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0, 0.05);
+}
+
+#socialMedia li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+#socialMedia li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+#socialMedia li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+#socialMedia li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+#socialMedia li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+}
+
+#socialMedia li:nth-child(1):hover span{
+    background: #3b5999;
+}
+
+#socialMedia li:nth-child(2):hover span{
+    background: #e4405f;
+}
+#socialMedia li:nth-child(3):hover span{
+    background: #f1022e;
+}
+
+#socialMedia li:nth-child(4):hover span{
+    background: #25d366;
+}
+
+#socialMedia li:nth-child(5):hover span{
+    background: #0077b5;
+}
+
+#socialMedia li:nth-child(6):hover span{
+    background: #55ecee;
+}
+@media  screen and (max-width: 1000px) {
+    footer{
+        overflow: auto;
+    }
+    #socialMedia li{
+        height: 40px;
+        width: 40px;
+    }
+}

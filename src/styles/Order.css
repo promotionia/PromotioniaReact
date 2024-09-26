@@ -1,0 +1,290 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e8e8e8 100%);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-size: 22px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    text-align: center;
+    background: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8f7cec;
+}
+
+.order-form-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    color: #222;
+    text-align: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.platform-selection {
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group input {
+    margin-right: 10px;
+}
+
+#payButton {
+    padding: 12px 20px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#payButton:hover {
+    background-color: #4c51bf;
+}
+
+.price-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.price-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    max-width: 260px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.price-card input[type="radio"] {
+    margin-right: 10px;
+}
+
+.price-card label {
+    display: block;
+}
+
+.price-card input[type="radio"]:checked + label {
+    background-color: #f0f8ff;
+    border: 1px solid #00f;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#totalPrice {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #8f7cec;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  .social-media {
+    margin-bottom: 10px;
+  }
+
+  .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  .social-media a:hover {
+    color: #8f7cec;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+
+  .footer-text a {
+    color: #8f7cec;
+    text-decoration: none;
+  }
+
+  .footer-text a:hover {
+    text-decoration: underline;
+  }
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+
+    .order-form-container {
+        padding: 30px;
+    }
+
+    #payButton {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 120px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .order-form-container {
+        padding: 25px;
+    }
+
+    #payButton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .order-form-container {
+        padding: 20px;
+    }
+
+    #payButton {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+
+    .order-form-container {
+        padding: 15px;
+    }
+
+    #payButton {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+
+    .order-form-container {
+        padding: 10px;
+    }
+
+    #payButton {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+}
+
+.cls-1 {
+    fill: #5f259f;
+}
+
+.cls-2 {
+    fill: #fff;
+}
